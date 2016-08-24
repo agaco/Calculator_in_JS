@@ -1,0 +1,89 @@
+.grid-container {
+	
+	
+	@media only screen and (min-width: 640px) {
+		/* For tablets: */
+//MENU____________________
+		.hamburger-menu {
+			display: none;	
+		}
+		.menu-bar {
+			//display: inline-flex;
+			a {
+				//display: flex;
+			}
+		}
+// O EASY DIET____________
+		.about {
+			height: 100vh;
+			margin-bottom: 50px;
+			padding: 0 8%;
+		}
+//JAK DZIAŁAMY____________
+		.how-do-we-work {
+			&:first-child {
+				margin-top: 100px;
+			}
+			&:nth-child(2) {
+				margin-top: 100px;
+			}
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}	
+		.steps {
+			&:after {
+				transform: 
+					rotate(-90deg)
+					translate(40px, 90px);
+			}
+		}
+//KONTAKT_________________
+		.form {
+			height: 100vh;
+			padding: 0 8%;
+		}			
+	}
+//___________________DESKTOP________________________________	
+	@media screen and (orientation: landscape),
+		   screen and (min-width: 850px) {
+			  // overflow-x: hidden;
+		   
+// O EASY DIET_____________
+		.about {
+			padding: 0 10%;
+		}
+			   
+			   //MAIN PAGE
+			   .main-page {
+				   article {
+					   font-size: 2.5em;
+				   }
+			   }
+//PROGRAMY_______________
+		.programs { 
+			height: 100vh;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			.tile {
+				height: 29vh;
+				min-height: 15em;
+
+			}
+			.open-prog {
+				height: 29vh;
+				min-height: 15em;
+			}
+		}
+//JAK DZIAŁAMY________________
+		.how-do-we-work {
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+//KONTAKT____________________
+		.form {
+			height: 100vh;
+			padding: 0 10%;
+		}
+	}
+}

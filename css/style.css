@@ -1,0 +1,245 @@
+/*pierwszy komentarz css*/
+.grid-container .row {
+  width: 300px;
+  margin-bottom: 10px;
+  min-height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-container .row.nested-row {
+  padding-bottom: 5px;
+}
+
+.grid-container .row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.grid-container [class*="col-"] {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  min-height: 50px;
+}
+
+.grid-container .col-xs-12 {
+  width: 100%;
+}
+
+.grid-container .col-xs-11 {
+  width: 91.66666667%;
+}
+
+.grid-container .col-xs-10 {
+  width: 83.33333333%;
+}
+
+.grid-container .col-xs-9 {
+  width: 75%;
+}
+
+.grid-container .col-xs-8 {
+  width: 66.66666667%;
+}
+
+.grid-container .col-xs-7 {
+  width: 58.33333333%;
+}
+
+.grid-container .col-xs-6 {
+  width: 50%;
+}
+
+.grid-container .col-xs-5 {
+  width: 41.66666667%;
+}
+
+.grid-container .col-xs-4 {
+  width: 33.33333333%;
+}
+
+.grid-container .col-xs-3 {
+  width: 25%;
+}
+
+.grid-container .col-xs-2 {
+  width: 16.66666667%;
+}
+
+.grid-container .col-xs-1 {
+  width: 8.33333333%;
+}
+
+@media only screen and (min-width: 640px) {
+  .grid-container {
+    /* For tablets: */
+  }
+  .grid-container .col-m-1 {
+    width: 8.33%;
+  }
+  .grid-container .col-m-2 {
+    width: 16.66%;
+  }
+  .grid-container .col-m-3 {
+    width: 25%;
+  }
+  .grid-container .col-m-4 {
+    width: 33.33%;
+  }
+  .grid-container .col-m-5 {
+    width: 41.66%;
+  }
+  .grid-container .col-m-6 {
+    width: 50%;
+  }
+  .grid-container .col-m-7 {
+    width: 58.33%;
+  }
+  .grid-container .col-m-8 {
+    width: 66.66%;
+  }
+  .grid-container .col-m-9 {
+    width: 75%;
+  }
+  .grid-container .col-m-10 {
+    width: 83.33%;
+  }
+  .grid-container .col-m-11 {
+    width: 91.66%;
+  }
+  .grid-container .col-m-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape), screen and (min-width: 800px) {
+  .grid-container .col-l-1 {
+    width: 8.33333%;
+  }
+  .grid-container .col-l-2 {
+    width: 16.66667%;
+  }
+  .grid-container .col-l-3 {
+    width: 25%;
+  }
+  .grid-container .col-l-4 {
+    width: 33.33333%;
+  }
+  .grid-container .col-l-5 {
+    width: 41.66667%;
+  }
+  .grid-container .col-l-6 {
+    width: 50%;
+  }
+  .grid-container .col-l-7 {
+    width: 58.33333%;
+  }
+  .grid-container .col-l-8 {
+    width: 66.66667%;
+  }
+  .grid-container .col-l-9 {
+    width: 75%;
+  }
+  .grid-container .col-l-10 {
+    width: 83.33333%;
+  }
+  .grid-container .col-l-11 {
+    width: 91.66667%;
+  }
+  .grid-container .col-l-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .grid-container {
+    /* For tablets: */
+  }
+  .grid-container .hamburger-menu {
+    display: none;
+  }
+  .grid-container .about {
+    height: 100vh;
+    margin-bottom: 50px;
+    padding: 0 8%;
+  }
+  .grid-container .how-do-we-work:first-child {
+    margin-top: 100px;
+  }
+  .grid-container .how-do-we-work:nth-child(2) {
+    margin-top: 100px;
+  }
+  .grid-container .how-do-we-work:last-child {
+    margin-bottom: 0px;
+  }
+  .grid-container .steps:after {
+    transform: rotate(-90deg) translate(40px, 90px);
+  }
+  .grid-container .form {
+    height: 100vh;
+    padding: 0 8%;
+  }
+}
+
+@media screen and (orientation: landscape), screen and (min-width: 850px) {
+  .grid-container .about {
+    padding: 0 10%;
+  }
+  .grid-container .main-page article {
+    font-size: 2.5em;
+  }
+  .grid-container .programs {
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .grid-container .programs .tile {
+    height: 29vh;
+    min-height: 15em;
+  }
+  .grid-container .programs .open-prog {
+    height: 29vh;
+    min-height: 15em;
+  }
+  .grid-container .how-do-we-work {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .grid-container .form {
+    height: 100vh;
+    padding: 0 10%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  color: #D4CBC2;
+  background-color: white;
+  width: 100vw;
+  margin: 0px auto;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+body .whole-width, html .whole-width {
+  height: 100vh;
+}
+
+.row {
+  background-color: blue;
+}
+
+.button-number {
+  border-radius: 50%;
+  background-color: crimson;
+  height: 50px;
+  width: 50px;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

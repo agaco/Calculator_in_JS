@@ -1,0 +1,36 @@
+/*pierwszy komentarz css*/
+@import "fonts";
+@import "grid";
+@import "variables";
+@import "rwd";
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+    color: $font-color;
+    background-color: white;
+	width: 100vw;
+    margin: 0px auto;
+	padding: 0;
+	font-size: $default-font-size;
+	font-family: 'Lato', sans-serif;
+		.whole-width {
+		height: 100vh;
+	}
+	
+}
+body {
+}
+.row {
+    background-color: blue;
+}
+.button-number {
+//    -webkit-border-radius: 90px;
+//    -moz-border-radius: 90px;
+    border-radius: 50%;
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+}
