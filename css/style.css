@@ -1,8 +1,8 @@
 /*pierwszy komentarz css*/
 .grid-container .row {
-  width: 300px;
+  width: 100%;
   margin-bottom: 10px;
-  min-height: 60px;
+  min-height: 70px;
   overflow: hidden;
   position: relative;
 }
@@ -21,7 +21,8 @@
   box-sizing: border-box;
   float: left;
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
+  border: 1px solid black;
 }
 
 .grid-container .col-xs-12 {
@@ -154,62 +155,18 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .grid-container {
-    /* For tablets: */
-  }
-  .grid-container .hamburger-menu {
-    display: none;
-  }
-  .grid-container .about {
-    height: 100vh;
-    margin-bottom: 50px;
-    padding: 0 8%;
-  }
-  .grid-container .how-do-we-work:first-child {
-    margin-top: 100px;
-  }
-  .grid-container .how-do-we-work:nth-child(2) {
-    margin-top: 100px;
-  }
-  .grid-container .how-do-we-work:last-child {
-    margin-bottom: 0px;
-  }
-  .grid-container .steps:after {
-    transform: rotate(-90deg) translate(40px, 90px);
-  }
-  .grid-container .form {
-    height: 100vh;
-    padding: 0 8%;
+  .calculator {
+    width: 80%;
+    max-width: 320px;
+    min-width: 120px;
+    background-color: yellow;
   }
 }
 
 @media screen and (orientation: landscape), screen and (min-width: 850px) {
-  .grid-container .about {
-    padding: 0 10%;
-  }
-  .grid-container .main-page article {
-    font-size: 2.5em;
-  }
-  .grid-container .programs {
-    height: 100vh;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .grid-container .programs .tile {
-    height: 29vh;
-    min-height: 15em;
-  }
-  .grid-container .programs .open-prog {
-    height: 29vh;
-    min-height: 15em;
-  }
-  .grid-container .how-do-we-work {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .grid-container .form {
-    height: 100vh;
-    padding: 0 10%;
+  .calculator {
+    width: 30%;
+    background-color: darkblue;
   }
 }
 
@@ -227,19 +184,40 @@ body, html {
   font-family: 'Lato', sans-serif;
 }
 
-body .whole-width, html .whole-width {
-  height: 100vh;
-}
-
-.row {
-  background-color: blue;
-}
-
 .button-number {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   background-color: crimson;
   height: 50px;
   width: 50px;
+  text-align: center;
+  padding: 15%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.calculator {
+  width: 100%;
+  min-width: 120px;
+  background-color: deeppink;
+  padding: 1em;
+  border-radius: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type=text] {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: white;
+  border: 0;
+  padding: 0 3px;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

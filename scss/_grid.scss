@@ -2,9 +2,9 @@ $grid-columns: 12;
 
 .grid-container {
 	.row {
-		width: 300px;
+		width: 100%;
 		margin-bottom: 10px; //wstawic zmienna pozniej
-		min-height: 60px;
+		min-height: 70px;
 		overflow: hidden;
 		position: relative;
 		
@@ -21,8 +21,8 @@ $grid-columns: 12;
 		box-sizing: border-box;
 		float: left;
 		width: 100%;
-		min-height: 50px;
-		//border: 1px solid black;
+		min-height: 60px;
+		border: 1px solid black;
 	}
 	
 	.col-xs-12 {width: 100%;}
