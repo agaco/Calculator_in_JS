@@ -2,7 +2,7 @@
 .grid-container .row {
   width: 100%;
   margin-bottom: 10px;
-  min-height: 70px;
+  min-height: 65px;
   overflow: hidden;
   position: relative;
 }
@@ -21,8 +21,7 @@
   box-sizing: border-box;
   float: left;
   width: 100%;
-  min-height: 60px;
-  border: 1px solid black;
+  min-height: 40px;
 }
 
 .grid-container .col-xs-12 {
@@ -156,17 +155,18 @@
 
 @media only screen and (min-width: 640px) {
   .calculator {
-    width: 80%;
-    max-width: 320px;
-    min-width: 120px;
+    max-width: 580px;
     background-color: yellow;
   }
 }
 
 @media screen and (orientation: landscape), screen and (min-width: 850px) {
   .calculator {
-    width: 30%;
-    background-color: darkblue;
+    max-width: 250px;
+  }
+  .button-number {
+    height: 50px;
+    width: 50px;
   }
 }
 
@@ -175,12 +175,11 @@
 }
 
 body, html {
-  color: #D4CBC2;
+  color: white;
   background-color: white;
-  width: 100vw;
   margin: 0px auto;
   padding: 0;
-  font-size: 15px;
+  font-size: 19px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -189,18 +188,28 @@ body, html {
   -moz-border-radius: 50%;
   border-radius: 50%;
   background-color: crimson;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   text-align: center;
   padding: 15%;
   margin: 0 auto;
   cursor: pointer;
+  border: 2px solid crimson;
+  font-size: 19px;
+}
+
+.button-number:hover {
+  background-color: #500716;
+  border: 2px solid white;
+}
+
+.button-number:active {
+  border: 2px solid white;
 }
 
 .calculator {
-  width: 100%;
-  min-width: 120px;
-  background-color: deeppink;
+  width: 95%;
+  background-color: darkslateblue;
   padding: 1em;
   border-radius: 1em;
   position: absolute;
@@ -213,11 +222,13 @@ body, html {
 input[type=text] {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 9px;
   background-color: white;
   border: 0;
-  padding: 0 3px;
+  padding: 4% 4%;
   font-size: 2em;
+  color: black;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

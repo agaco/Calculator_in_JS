@@ -4,9 +4,10 @@ $grid-columns: 12;
 	.row {
 		width: 100%;
 		margin-bottom: 10px; //wstawic zmienna pozniej
-		min-height: 70px;
+		min-height: 65px;
 		overflow: hidden;
 		position: relative;
+        //border: 1px solid yellow;
 		
 		&.nested-row {
 			padding-bottom: 5px;
@@ -21,8 +22,8 @@ $grid-columns: 12;
 		box-sizing: border-box;
 		float: left;
 		width: 100%;
-		min-height: 60px;
-		border: 1px solid black;
+		min-height: 40px;
+		//border: 1px solid black;
 	}
 	
 	.col-xs-12 {width: 100%;}

@@ -1,10 +1,10 @@
 //___________________TABLET________________________________
 @media only screen and (min-width: 640px) {
     .calculator {
-        width:80%;
-        max-width: 320px;
-        min-width: 120px;background-color: yellow;
-        
+        //width: 90%;
+        max-width: 580px;
+        //min-width: 120px;
+        background-color: yellow;
     }
        
 }
@@ -12,8 +12,11 @@
 @media screen and (orientation: landscape),
         screen and (min-width: 850px) {
     .calculator {
-        width: 30%;
-        background-color: darkblue;
+        max-width: 250px;
+    }
+    .button-number {
+        height: 50px;
+        width: 50px;
     }
 
 }
