@@ -1,6 +1,6 @@
 /*pierwszy komentarz css*/
 @import "fonts";
-@import "grid";
+//@import "grid";
 //@import "variables";
 @import "rwd";
 
@@ -18,8 +18,32 @@ body, html {
 	font-size: 19px;
 	font-family: 'Lato', sans-serif;
 	}
-	
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid red;
+    
+}	
+.calculator {
+    display: flex;
+    flex-direction: column;
+    //max-width: 340px;
+    width:95%;
+    //min-width: 120px;
+    height: 400px;
+    background-color: #0695B8;
+    padding: 1em;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 .button-number {
+    display: flex;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -43,19 +67,6 @@ body, html {
         box-shadow: 0px 0px 2px 1px rgba(255,255,255,1);
     }
 
-}
-.calculator {
-    //max-width: 340px;
-    width:95%;
-    //min-width: 120px;
-    background-color: #0695B8;
-    padding: 1em;
-    border-radius: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 }
 
 input[type=text] {
