@@ -156,7 +156,6 @@
 @media only screen and (min-width: 640px) {
   .calculator {
     max-width: 580px;
-    background-color: yellow;
   }
 }
 
@@ -187,29 +186,31 @@ body, html {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: crimson;
+  background-color: #A51547;
   height: 60px;
   width: 60px;
   text-align: center;
   padding: 15%;
   margin: 0 auto;
   cursor: pointer;
-  border: 2px solid crimson;
+  border: 2px solid #A51547;
   font-size: 19px;
 }
 
 .button-number:hover {
   background-color: #500716;
   border: 2px solid white;
+  box-shadow: 0px 0px 2px 1px white;
 }
 
 .button-number:active {
   border: 2px solid white;
+  box-shadow: 0px 0px 2px 1px white;
 }
 
 .calculator {
   width: 95%;
-  background-color: darkslateblue;
+  background-color: #0695B8;
   padding: 1em;
   border-radius: 1em;
   position: absolute;
