@@ -2,17 +2,27 @@
 @media only screen and (min-width: 640px) {
     .calculator {
         //width: 90%;
-        max-width: 580px;
-        //min-width: 120px;
-        //background-color: yellow;
+        max-width: 500px;
+        min-height: 480px;
     }
+	header {
+	height: 130px;
+	margin-top: 1em;
+	p {
+		font-size: 24px;
+	}
+	.logo {
+		height: 65%;
+	}
+}
        
 }
 //___________________DESKTOP________________________________	
 @media screen and (orientation: landscape),
         screen and (min-width: 850px) {
     .calculator {
-        max-width: 250px;
+        max-width: 300px;
+		height: 400px;
     }
     .button-number {
         height: 50px;

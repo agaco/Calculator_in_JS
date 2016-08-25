@@ -31,7 +31,7 @@ $(document).ready(function(){
             
             sum += parseInt(split[i], 10);
             console.log(sum)
-            $inputScreen.val("sum is: " + sum);
+            $inputScreen.val("= " + sum);
         }
     });
 });
