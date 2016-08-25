@@ -3,11 +3,12 @@ $grid-columns: 12;
 .grid-container {
 	.row {
 		width: 100%;
-		margin-bottom: 10px; //wstawic zmienna pozniej
+		margin-bottom: 10px;
 		min-height: 65px;
 		overflow: hidden;
 		position: relative;
-        //border: 1px solid yellow;
+        border: 1px solid yellow;
+		padding: 3px 0;
 		
 		&.nested-row {
 			padding-bottom: 5px;

@@ -1,20 +1,20 @@
 //___________________TABLET________________________________
-@media only screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
     .calculator {
         //width: 90%;
         max-width: 500px;
         min-height: 480px;
     }
 	header {
-	height: 130px;
-	margin-top: 1em;
-	p {
-		font-size: 24px;
+		height: 130px;
+		margin-top: 1em;
+		p {
+			font-size: 24px;
+		}
+		.logo {
+			height: 65%;
+		}
 	}
-	.logo {
-		height: 65%;
-	}
-}
        
 }
 //___________________DESKTOP________________________________	
@@ -23,10 +23,6 @@
     .calculator {
         max-width: 300px;
 		height: 400px;
-    }
-    .button-number {
-        height: 50px;
-        width: 50px;
     }
 
 }
