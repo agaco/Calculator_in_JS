@@ -59,14 +59,13 @@ header {
     -moz-border-radius: 50%;
     border-radius: 50%;
     background-color: #a91548;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     text-align: center;
-    //padding: 15%;
     margin: 0 auto;
     cursor: pointer;
     border: 2px solid #a91548;
-    font-size: 36px;
+    font-size: 30px;
     
     &:hover {
         background-color: darken(#660c2b, 30%);
@@ -106,17 +105,32 @@ footer {
 	}
 }
 //_______ALERT____________
-alert {
+div.alert {
 	background-color: #a91548;
-	display: none;
-	span {
+	color: white;
+		
+	a {
 		font-size: 20px;
 		color: white;
-		cursor: pointer;
-		i {
-			&:hover {
-				transform: scale(20);
-			}
+		text-decoration: none;
+		float: right;
+		&:link, &:visited {
+			text-decoration: none;
+			color: white;
+		}
+		&:hover {
+			transform: scale(2,2);
+			transition: 1s;
+			
 		}
 	}
+	.alert-content {
+		p {
+			font-size: 1.3em;
+			text-align: center;
+		}
+	}
+}
+div.display {
+	display: none;
 }
