@@ -26,16 +26,19 @@ $(document).ready(function(){
 			$inputScreen.val("");
 		}
     });
-	
-//	for (var j = 0; j < $screen.length; j++) {
-//		if ($screen[0]) = "+" {
-//			alert ("+ nie moze byc na koncu lub poczatku ");
-//		}
-//	}
     
-    //SUMA
+    //SUMA	
     $buttonSum.on("click", function(event){
-        var split = $screen.split('+');
+		
+		if ($screen[$screen.length-1] === "+") {
+			console.log("ostatni znak to :" + $screen[$screen.length-1]);
+			$("div.alert").removeClass("display");
+			$("div.alert-content").html("<p> + cannot be on the last place <br> start counting again</p>");
+
+			return $inputScreen.val("")
+		}
+		
+		var split = $screen.split('+');
         console.log(split);
         for (var i = 0; i < split.length; i++) {
            console.log(parseInt(split[i], 10));
