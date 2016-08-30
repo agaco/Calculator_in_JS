@@ -18,7 +18,20 @@ $(document).ready(function(){
         $inputScreen.val($("input").val() + ($digitValue));  
         $screen =  $inputScreen.val();
         console.log("zawartosc ekranu: " + $screen);
+   
+		
+		if ($screen[0] === "+" ) {
+			$("div.alert").removeClass("display");
+			$("div.alert-content").html("<p> + cannot be on the first place <br> start counting again</p>");
+			$inputScreen.val("");
+		}
     });
+	
+//	for (var j = 0; j < $screen.length; j++) {
+//		if ($screen[0]) = "+" {
+//			alert ("+ nie moze byc na koncu lub poczatku ");
+//		}
+//	}
     
     //SUMA
     $buttonSum.on("click", function(event){
@@ -36,7 +49,7 @@ $(document).ready(function(){
             $inputScreen.val("");
         }
     });
-	
+	//CLOSE BUTTON
 	$("#close").on("click", function(event){
 		$("div.alert").addClass("display")
 		
