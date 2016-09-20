@@ -218,15 +218,6 @@ header p {
   margin: 0;
 }
 
-.logo {
-  background-image: url("../img/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 35%;
-  width: auto;
-}
-
 .calculator {
   width: 95%;
   height: 420px;
